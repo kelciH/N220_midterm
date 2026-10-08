@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Picker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="header">Movie Night Picker</div>
+      <div class="controls">
+        <div class="select">
+          <div>Sort By Genre:</div>
+          <select name="Genre" id="genreSelect">
+            <option value="None">None</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+          </select>
+        </div>
+        <button class="sortBtn" id="sortYear">Sort By Year</button>
+        <button class="sortBtn" id="sortTitle">Sort By Title</button>
+        <button class="sortBtn" id="pickMe">Pick For Me!</button>
+      </div>
+      <div id="movieCount"></div>
+      <div class="pickmeWords"></div>
+      <div class="movies"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
